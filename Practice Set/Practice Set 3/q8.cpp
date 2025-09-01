@@ -26,8 +26,16 @@ int main(){
     cin>>n;
     Bank b[n];
     int acc,bal;
-    cout<<"Enter account number and balance: ";
-    cin>>acc>>bal;
-    for
+    
+    for(int i=0;i<n;i++){
+        cout<<"Enter account number and balance: ";
+        cin>>acc>>bal;
+        b[i].set_value(acc,bal);
+    }
+
+    for(int i=0;i<n;i++){
+        b[i].get_value();
+    }
+
     return 0;
 }
